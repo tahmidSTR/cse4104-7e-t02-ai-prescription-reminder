@@ -6,11 +6,8 @@
 
 | Field | Details |
 |---|---|
-| **Course** | CSE 4104: Software Development III |
-| **Institution** | Northern University of Business and Technology, Khulna |
 | **Team Name** | CSE4104-7E-T02 |
 | **Section** | 7E |
-| **Instructor** | Md. Riaz Mahmud, Assistant Professor, Dept. of CSE |
 
 | Role | Name | Student ID |
 |---|---|---|
