@@ -8,6 +8,7 @@
 |---|---|
 | **Team Name** | CSE4104-7E-T02 |
 | **Section** | 7E |
+| **Repository** | https://github.com/tahmidSTR/AI-Powered-Prescription-Recognition-and-Intelligent-Medication-Reminder-System |
 
 | Role | Name | Student ID |
 |---|---|---|
@@ -17,7 +18,7 @@
 
 ## Project Description
 
-In Bangladesh, most prescriptions are handwritten, mix English and Bangla, and use shorthand dose patterns such as "1+0+1" (morning, noon, night). Many patients, especially elderly people, find them hard to read and follow, which leads to missed doses, medicines taken at the wrong time, and a poor understanding of the treatment.
+In Bangladesh, most prescriptions are handwritten and use shorthand dose patterns such as "1+0+1" (morning, noon, night). Many patients, especially elderly people, find them hard to read and follow, which leads to missed doses, medicines taken at the wrong time, and a poor understanding of the treatment.
 
 Existing tools each solve only part of the problem. Global reminder apps require manual entry of every medicine, local apps cannot read a paper prescription, medicine index apps have no reminders, and research prototypes stop at text extraction. There is no accessible tool that turns a photo of a handwritten Bangladeshi prescription directly into a confirmed reminder schedule.
 
@@ -49,7 +50,7 @@ The system supports, and does not replace, the advice of a doctor or pharmacist.
 - Condition-based caution note advising the user to consult a doctor or pharmacist
 - Dashboard showing today's doses, adherence summary and active prescriptions
 - Caregiver view so a family member can monitor adherence *(if time permits)*
-- Responsive design for desktop, tablet and mobile
+- Responsive design that works on mobile
 
 ## Technology Stack
 
