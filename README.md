@@ -8,7 +8,7 @@
 |---|---|
 | **Team Name** | CSE4104-7E-T02 |
 | **Section** | 7E |
-| **Repository** | https://github.com/tahmidSTR/AI-Powered-Prescription-Recognition-and-Intelligent-Medication-Reminder-System |
+| **Repository** | https://github.com/tahmidSTR/cse4104-7e-t02-ai-prescription-reminder |
 
 | Role | Name | Student ID |
 |---|---|---|
