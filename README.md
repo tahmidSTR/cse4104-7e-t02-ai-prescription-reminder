@@ -26,7 +26,7 @@ This project fills that gap. A user photographs a prescription, a multimodal AI 
 
 The system supports, and does not replace, the advice of a doctor or pharmacist. Low-confidence readings are highlighted so that nothing unverified is trusted automatically.
 
-**Target users:** Designed for everyone from elderly individuals and their caregivers to busy professionals managing their own health without full-time support.
+**Target users:** Everyone from elderly individuals and their caregivers to busy professionals managing their health without full-time support.
 
 ### Objectives
 
