@@ -1,6 +1,6 @@
 # AI-Powered Prescription Recognition and Intelligent Medication Reminder System
 
-> Photograph a handwritten prescription, confirm what the AI read, and get a reliable medication reminder schedule.
+> Photograph a handwritten prescription, confirm what the AI read, and get a reliable medication reminder schedule on your Android phone.
 
 ## Team Information
 
@@ -22,11 +22,11 @@ In Bangladesh, most prescriptions are handwritten and use shorthand dose pattern
 
 Existing tools each solve only part of the problem. Global reminder apps require manual entry of every medicine, local apps cannot read a paper prescription, medicine index apps have no reminders, and research prototypes stop at text extraction. There is no accessible tool that turns a photo of a handwritten Bangladeshi prescription directly into a confirmed reminder schedule.
 
-This project fills that gap. A user photographs a prescription, a multimodal AI model extracts the medicine names, doses, durations and timing patterns, and the user reviews and confirms the result before anything is saved. The system then creates reminders, tracks whether each dose was taken or missed, and provides plain-language medicine information.
+This project is an Android mobile application that fills that gap. A user photographs a prescription, the Google Gemini API reads the image and returns the medicine names, doses, durations and timing patterns, and the user reviews and confirms the result before anything is saved. The app then sets reminders on the phone, tracks whether each dose was taken or missed, and shows plain-language medicine information.
 
-The system supports, and does not replace, the advice of a doctor or pharmacist. Low-confidence readings are highlighted so that nothing unverified is trusted automatically.
+The system supports, and does not replace, the advice of a doctor or pharmacist. Low-confidence readings are highlighted, and no reminder is created until the user confirms the schedule.
 
-**Target users:** Everyone from elderly individuals and their caregivers to busy professionals managing their health without full-time support.
+**Target users:** elderly patients and their caregivers.
 
 ### Objectives
 
@@ -35,7 +35,7 @@ The system supports, and does not replace, the advice of a doctor or pharmacist.
 - Send timely medicine reminders and track taken and missed doses.
 - Provide plain-language medicine information, including generic names and general price data.
 - Gently flag a medicine that does not seem to match the stated condition and advise consulting a doctor or pharmacist.
-- Provide a simple, responsive interface suitable for elderly users and caregivers.
+- Provide a simple interface suitable for elderly users and caregivers.
 
 ## Proposed Features
 
@@ -56,12 +56,13 @@ The system supports, and does not replace, the advice of a doctor or pharmacist.
 
 | Layer | Technologies |
 |---|---|
-| **Frontend** | React (Vite), Tailwind CSS, Capacitor shell |
-| **Native Plugins** | `@capacitor/local-notifications`, `@capacitor/camera`, `@capacitor/filesystem`, `@capacitor/push-notifications` |
+| **Frontend** | React (Vite), Tailwind CSS, Capacitor shell (Android) |
+| **Native Plugins** | `@capacitor/local-notifications`, `@capacitor/camera`, `@capacitor/filesystem`, `@capacitor/push-notifications` *(optional)* |
 | **Backend** | Node.js, Express, JSON Web Token (JWT) authentication, bcrypt, node-cron |
 | **Database** | PostgreSQL (Supabase free plan), Supabase Storage for prescription images |
-| **AI** | Google Gemini API (multimodal) |
-| **Deployment** | Render, Vercel / Netlify, Supabase, GitHub Releases / Firebase App Distribution |
+| **AI** | Google Gemini API, model `gemini-3.8-flash` |
+| **Notifications** | Capacitor local notifications; Firebase Cloud Messaging for caregiver alerts *(optional)* |
+| **Deployment** | Render (backend), Supabase (database and storage), GitHub Releases / Firebase App Distribution (Android app) |
 | **Tools** | GitHub, Postman, Figma, Android Studio, Vitest / Jest |
 
 ## Installation Instructions
