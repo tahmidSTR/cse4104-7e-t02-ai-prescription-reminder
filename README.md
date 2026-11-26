@@ -26,7 +26,7 @@ This project is an Android mobile application that fills that gap. A user photog
 
 The system supports, and does not replace, the advice of a doctor or pharmacist. Low-confidence readings are highlighted, and no reminder is created until the user confirms the schedule.
 
-**Target users:** elderly patients and their caregivers.
+**Target users:** Designed for everyone from elderly individuals and their caregivers to busy professionals managing their own health without full-time support.
 
 ### Objectives
 
